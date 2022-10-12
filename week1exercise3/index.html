@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week1ex3</title>
+</head>
+<form action="action_page.php" method="post">
+
+    <body style="background-color:rgba(174, 250, 23, 0.91);">
+        <fieldset>
+            <legend><strong>Personal Details</strong></legend>
+            <br>
+            <center>
+                <div>
+                    <label for="name"> Name:</label>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="Password">Password:</label>
+                    <input type="password" placeholder="Enter password" name="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+                <br>
+                <div>
+                    <label for="E-mail id">E-mail id:</label>
+                    <input type="email" placeholder="Enter E-mail" required>
+                </div>
+                <br>
+                <div>
+
+                    <Gender>Gender:</Gender>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Contact#:</label>
+
+                    <input type="tel" id="phone" name="phone" required onkeypress="return onlyNumberKey(event)">
+
+
+                </div>
+                <br>
+            </center>
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <legend><strong>Additional Information</strong></legend>
+            <center>
+
+                <label for="select group">Degree:
+                </label>
+                <select name="select group">select group
+
+                    <option value="">--Select Group--</option>
+                    <option value="B.TECH">B.TECH</option>
+                    <option value="DIPLOMA">DIPLOMA</option>
+                    <option value="SSC">SSC</option>
+                </select>
+
+                <div>
+
+                    <label for="Hobbies:">Hobbies:</label>
+                    <input type="checkbox">Playing chess <input type="checkbox">Reading Books
+                </div>
+                <div>
+                    Attach photo <input type="file"><br>
+                </div>
+            </center>
+        </fieldset>
+        <br>
+        <center>
+
+            <button>submit</button><button>Reset</button>
+        </center>
+</form>
+</body>
+
+</html>
